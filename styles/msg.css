@@ -72,7 +72,7 @@ main div.ui {
   display: flex;
   width: 100%;
   position: fixed;
-  bottom: 10%;
+  bottom: 20%;
   left: 0;
   background-color: #1666FF;
 }
