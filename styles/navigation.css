@@ -1,0 +1,61 @@
+/****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+
+#navigation {
+  height: 70px;
+  box-sizing: border-box;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px #ddd;
+  background-color: #F7F7F7;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#navigation div {
+  --pos1: 15%;
+  --pos2: 100%;
+  --color1: black;
+  --color2: transparent;
+  --color3: white;
+  box-sizing: border-box;
+  display: grid;
+  text-align: center;
+  place-items: center;
+}
+
+#navigation div.selected {
+  --pos1: -20%;
+  --pos2: -100%;
+  --color1: white;
+  --color2: black;
+  --color3: var(--bg-color);
+}
+
+#navigation div.selected i {
+  display: inline-block;
+  background-color: #11AAFF;
+  border-color: #F7F7F7;
+}
+
+#navigation div i {
+  padding: 20px;
+  border-radius: 50%;
+  width: min-content;
+  transition: .5s;
+  border: 7px transparent solid;
+  color: var(--color1);
+  font-size: 19px;
+  transform: translate(0px, var(--pos1));
+}
+
+#navigation div span {
+  transition: .5s;
+  transform: translate(0px, var(--pos2));
+  color: var(--color2);
+  font-weight: 300;
+}

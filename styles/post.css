@@ -1,0 +1,115 @@
+/**********************************************************************************************************************************************************************************************************************************************************************************************************************/
+.post {
+  margin: 10px;
+  margin-bottom: 30px;
+}
+.post > div.main {
+  display: grid;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #efefef;
+  color: #333;
+  grid-template-areas:
+    "header header header header"
+    "hr hr hr hr"
+    "body body body body";
+}
+
+.post hr {
+  grid-area: hr;
+  margin: 15px 0px;
+}
+
+.post .header {
+  padding: 5px;
+  grid-area: header;
+  place-items: left;
+  display: grid;
+  grid-gap: 0px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "logo name name name name"
+    "logo time time time time";
+}
+
+.post .header .logo {
+  grid-area: logo;
+  width: 40px;
+  height: 40px;
+  border: 5px #999 solid;
+  border-radius: 50%;
+  background-color: #ccc;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.post .header .name {
+  grid-area: name;
+  font-size: 17px;
+  font-weight: 400;
+  transform: translate(-0%);
+}
+
+.post .header .time {
+  grid-area: time;
+  font-size: 10px;
+  font-weight: 200;
+  transform: translate(-0%, -12%);
+}
+
+.post .body {
+  border: 1px solid #000;
+  grid-area: body;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "discription discription discription discription"
+    "discription discription discription discription"
+    "img img img img"
+    "img img img img"
+    "img img img img"
+    "img img img img";
+  min-height: 120px;
+}
+
+.post .body .discription {
+  grid-area: discription;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+  max-width: 100%;
+  padding: 10px;
+}
+
+.post .body img {
+  grid-area: img;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow-y: scroll;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 5px;
+  padding: 10px 20px;
+  color: #999;
+}
+.action > span.selected {
+  color: #3084FF;
+}
+.action > span.selected#dislike {
+  color: #FF2811;
+}
+.action > span.selected#share {
+  color: #4011FF;
+}

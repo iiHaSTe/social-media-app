@@ -1,0 +1,90 @@
+/***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+header {
+  padding: 10px;
+  background-color: #F1F1F1;
+  color: #111;
+  display: flex;
+  align-items: center;
+}
+header div {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-right: 30px;
+}
+.logo i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #ccc;
+  border: 5px green solid;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 17px;
+}
+
+/* chat */
+main {
+  display: block;
+  width: 100%;
+  height: 88vh;
+  background-color: white;
+  margin-top: 3px;
+  color: #111;
+  overflow-y: scroll;
+}
+main div.chat {
+  position: relative;
+  width: 100%;
+  padding: 7px;
+  overflow-y: scroll;
+  padding-bottom: 100px;
+}
+main div.chat div {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+main div.chat div p {
+  display: inline-block;
+  background-color: #1674FF;
+  padding: 3px 10px;
+  border-radius: 5px;
+  color: white;
+  margin-top: 10px;
+}
+/*main div.chat div p.self {
+  float: left;
+}*/
+main div.chat div p.hem {
+  left: 100%;
+  background-color: #FF4A22;
+  transform: translate(-100%);
+}
+main div.ui {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #1666FF;
+}
+main div.ui input {
+  border: 2px solid #C1C1C1;
+  outline: none;
+  width: 100%;
+  background-color: #D6D6D6;
+  padding: 7px 15px;
+  caret-color: #AC0FFF;
+}
+main div.ui > i, button.photo, button.send {
+  background-color: transparent;
+  color: white;
+  padding: 15px;
+  font-weight: 700;
+  border: none;
+}

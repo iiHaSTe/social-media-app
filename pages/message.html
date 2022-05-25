@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+      integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+      crossorigin="anonymous"
+    />
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../styles/msg.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  </style>
+  <title>Message</title>
+</head>
+<body>
+  <header>
+    <i class="fa fa-angle-left"></i>
+    <div>
+      <span class="logo">
+        <i class="fa fa-user"></i>
+        <span>name</span>
+      </span>
+      <span>
+        <i class="fa fa-phone"></i>
+      </span>
+    </div>
+    <i class="fa fa-ellipsis-v"></i>
+  </header>
+  <main>
+    <div id="chat" class="chat">
+      <div>
+        <p class="self">hi</p>
+      </div>
+      <div>
+        <p class="hem">hello</p>
+      </div>
+    </div>
+    <div class="ui">
+      <i class="fa fa-plus"></i>
+      <input placeholder="Message" type="text" id="msg"/>
+      <button class="photo">
+        <i class="fa fa-camera"></i>
+      </button>
+      <button id="send" class="send">
+        <i class="fa fa-paper-plane"></i>
+      </button>
+    </div>
+  </main>
+  <script src="../js/msg.js"></script>
+</body>
+</html>
