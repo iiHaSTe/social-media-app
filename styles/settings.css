@@ -1,0 +1,70 @@
+/******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+body {
+  padding: 15px;
+}
+header {
+  margin-bottom: 15px;
+  padding: 10px;
+  padding-right: 40px;
+  background-color: white;
+  border-radius: 10px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header span.logo {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: #111;
+  background-color: #ccc;
+  border: 3px #111 solid;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 17px;
+  font-weight: 100;
+}
+section h3 {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 7px;
+  color: #111;
+  border-radius: 10px 10px 0px 0px;
+  border: 2px #111 solid;
+  border-bottom-color: #eee;
+  background-color: #eee;
+}
+section h3 + div {
+  background-color: #eee;
+  color: #111;
+  padding: 20px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+}
+section h3 + div > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: #111;
+  font-weight: 300;
+  font-size: 18px;
+  direction: rtl;
+}
+section h3 + div > div span {
+  font-weight: 600;
+  color: red;
+  transition: .3s;
+}
+section h3 + div > div input {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+}
+input:checked ~ span {
+  color: green;
+}
